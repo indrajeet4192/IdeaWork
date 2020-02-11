@@ -7,7 +7,7 @@ public class ThreadMain {
         ThreadPractice threadPractice = new ThreadPractice();
         ThreadPractice threadPractice2 = new ThreadPractice();
         threadPractice.start();
-        //threadPractice.join();
         threadPractice2.start();
+        //threadPractice2.join();
     }
 }
