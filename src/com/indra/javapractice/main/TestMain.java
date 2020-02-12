@@ -6,5 +6,7 @@ public class TestMain {
         int b = 7;
         int c = a/b;
         System.out.println("c = " + c);
+        System.out.println("Idea Practice");
+
     }
 }
