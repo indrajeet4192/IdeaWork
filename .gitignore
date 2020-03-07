@@ -1,3 +1,6 @@
 /out/
 IntelliJWork.iml
 /.idea/
+/Scala/.idea
+/Scala/Scala.iml
+/Scala/out/
