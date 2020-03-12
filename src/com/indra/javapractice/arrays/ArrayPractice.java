@@ -7,7 +7,7 @@ public class ArrayPractice {
     private static final int [] tempArray ;
 
     static {
-        tempArray = new int[]{12, 4, 1, 4, 67, 32, 45, 22, 44, 12, 33,9};
+        tempArray = new int[]{12, 4, 1, 4, 67, 32, 45, 22, 44, 12, 33, 9};
     }
 
     public static int[] getTempArray() {
@@ -32,6 +32,22 @@ public class ArrayPractice {
         int [] practiceArray2 = Arrays.copyOf(tempArray,tempArray.length);
         System.out.println("Arrays.toString(practiceArray2) = " + Arrays.toString(practiceArray2));
         System.out.println("Reverse Array Custom method: " +Arrays.toString(gerReverseArray(practiceArray2)));
+
+        System.out.println("I am in Arrays Testing ");
+        if (Arrays.binarySearch(practiceArray,67)>=0){
+            System.out.println("Number is present "+ Arrays.binarySearch(practiceArray,67));
+        }
+        System.out.println("Finding Duplicate emelent");
+
+        String[] myStringArray = {"Alice", "Bob", "Tim", "John", "Tim",
+                "Denice","Bob","Alice"};
+        for (int i = 0; i < myStringArray.length; i++) {
+            String tempString = myStringArray[i];
+            for (int j = i+1; j <myStringArray.length ; j++) {
+                if(tempString.equals(myStringArray[j]))
+                    System.out.println("Duplicate found "+tempString );
+            }
+        }
     }
 
     private static int[] gerReverseArray(int[] practiceArray2) {

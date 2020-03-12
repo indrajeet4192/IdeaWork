@@ -5,9 +5,9 @@ import com.indra.javapractice.beans.Employee;
 import java.util.*;
 
 public class StreamPractice {
-    private List <Employee> empList ;
+    private List<Employee> empList ;
     private Set<Employee> employeeSet;
-    private Map<Integer,Employee>employeeMap;
+    private Map<Integer,Employee> employeeMap;
 
     public StreamPractice(List<Employee> empList, Set<Employee> employeeSet, Map<Integer, Employee> employeeMap) {
         this.empList = empList;
